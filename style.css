@@ -1,5 +1,19 @@
 html,
 body {
+	/* ===== Hero Banner ===== */
+#hero{
+	position:relative; /* parent for absolute children */
+	height:60vh; /* 60% of viewport height */
+	overflow:hidden; /* hide particles outside box */
+  }
+  .site-title{
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%,-50%); /* perfect centre */
+	color:#fff;
+	font-size:4rem;
+	text-shadow:0 0 12px #000;
+	z-index:10; /* keep text above canvas */ }
 	margin: 0;
 	padding: 0;
 	overflow: hidden;

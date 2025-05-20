@@ -1,17 +1,120 @@
+<!-- Document type declaration for HTML5 -->
 <!DOCTYPE html>
+<!-- HTML root element with language set to English -->
 <html lang="en">
-
+<!-- Head section containing metadata and document setup -->
 <head>
-	<meta charset="utf-8" />
-	<!-- keep the line below for OpenProcessing compatibility -->
-	<script src="https://openprocessing.org/openprocessing_sketch.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
-	<script src="mySketch.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Character encoding declaration -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title that appears in browser tab -->
+    <title>Animated Hero Background</title>
+    
+    <!-- External library imports -->
+    <!-- Load p5.js main library for creative coding -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Load p5.js WebGL addon for 3D graphics support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    
+    <!-- Internal CSS styles -->
+    <style>
+        /* Reset default body margins and prevent horizontal scrolling */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        /* Container for the hero animation section */
+        #hero-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+
+        /* Content section that overlays the animation */
+        #content {
+            position: relative;
+            z-index: 1; /* Ensures content appears above the animation */
+            padding: 2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+        }
+
+        /* Main heading styles */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Paragraph text styles */
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+    </style>
 </head>
+<!-- Body section containing the main content -->
+<body>
+    <!-- Container for the p5.js animation -->
+    <div id="hero-container">
+        <!-- The p5.js canvas will be automatically inserted here -->
+    </div>
+    
+    <!-- Main content section -->
+    <div id="content">
+        <!-- Nested body tag (Note: This is not recommended HTML structure) -->
+        <body>
+            <!-- Highlighted text -->
+            <mark><p1>The end</p1></mark>
+            
+            <!-- External link to Google search -->
+            <a href="https://www.google.com/search?q=wall&oq=wall&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIHCAMQABiPAjIHCAQQABiPAjIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDEwMjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">is never the end </a>
+            
+            <!-- Inline style for background color -->
+            <style>body{background-color:salmon;}</style>
+            
+            <!-- Nested head tag (Note: This is not recommended HTML structure) -->
+            <head> <title>Ending</title></head>
+            
+            <!-- Local image display -->
+            <img src="file:///Users/cjung25/Desktop/School/Comp%20Sci/Screen%20Shot%202025-04-23%20at%201.10.37%20PM.png" alt="The end">
+            
+            <!-- Bold text -->
+            <b><p1>is never</p1></b>
+            
+            <!-- Unordered list items -->
+            <ul>the end</ul>
+            <ul>is never</ul>
+            <ul>the end</ul>
+            
+            <!-- Ordered list items -->
+            <ol>1. is never</ol>
+            <ol>2. the end</ol>
+            
+            <!-- Div containers -->
+            <div>is never</div>
+            <div>the end</div>
+            
+            <!-- HTML comment -->
+            <!-- E N D I N G -->
+        </body> 
+        
+        <!-- Another nested body tag (Note: This is not recommended HTML structure) -->
+        <body>
+            <!-- Text elements -->
+            <p1>is never</p1>
+            <p1>the end</p1> 
+            
+            <!-- Multiple inline styles -->
+            <style>body{color:darkgreen;}</style>
+            <style>body{font-family:comicsansms;}</style>
+            <style>body{font-size: 5em;}</style>
+    </div>
 
-<body>   
-	
+    <!-- Load the custom p5.js sketch -->
+    <script src="js/mySketch.js"></script>
 </body>
-
-</html>
+</html> 
